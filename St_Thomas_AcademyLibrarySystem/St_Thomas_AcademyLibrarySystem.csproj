@@ -1,0 +1,398 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5CFD0DEA-3F28-4B72-8797-EB47F802FB98}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>St_Thomas_AcademyLibrarySystem</RootNamespace>
+    <AssemblyName>St_Thomas_AcademyLibrarySystem</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddaBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddaBook.Designer.cs">
+      <DependentUpon>AddaBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddStudent.Designer.cs">
+      <DependentUpon>AddStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BorrowBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BorrowBook.Designer.cs">
+      <DependentUpon>BorrowBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BorrowedHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BorrowedHistory.Designer.cs">
+      <DependentUpon>BorrowedHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseConnection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DatabaseConnection.Designer.cs">
+      <DependentUpon>DatabaseConnection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BookLists.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BookLists.Designer.cs">
+      <DependentUpon>BookLists.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageBooks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageBooks.Designer.cs">
+      <DependentUpon>ManageBooks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="msgboxes\MsgBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReturnBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReturnBook.Designer.cs">
+      <DependentUpon>ReturnBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SettingsAuthentication.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SettingsAuthentication.Designer.cs">
+      <DependentUpon>SettingsAuthentication.cs</DependentUpon>
+    </Compile>
+    <Compile Include="STALibraryDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>STALibraryDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="STALibraryDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>STALibraryDataSet1.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddaBook.resx">
+      <DependentUpon>AddaBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddStudent.resx">
+      <DependentUpon>AddStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BookLists.resx">
+      <DependentUpon>BookLists.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BorrowBook.resx">
+      <DependentUpon>BorrowBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BorrowedHistory.resx">
+      <DependentUpon>BorrowedHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DatabaseConnection.resx">
+      <DependentUpon>DatabaseConnection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageBooks.resx">
+      <DependentUpon>ManageBooks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="msgboxes\MsgBox.resx">
+      <DependentUpon>MsgBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReturnBook.resx">
+      <DependentUpon>ReturnBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SettingsAuthentication.resx">
+      <DependentUpon>SettingsAuthentication.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="STALibraryDataSet.xsc">
+      <DependentUpon>STALibraryDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="STALibraryDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>STALibraryDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="STALibraryDataSet.xss">
+      <DependentUpon>STALibraryDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="STALibraryDataSet1.xsc">
+      <DependentUpon>STALibraryDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="STALibraryDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>STALibraryDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="STALibraryDataSet1.xss">
+      <DependentUpon>STALibraryDataSet1.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HeaderAndBackground1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UsernameField.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PasswordField.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainBackground.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LogoSTA.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TimePanel.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Profile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ManageBooks.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BorrowBooks.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ReturnBook.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\About.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LogoSTAManage.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddBooks.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BookList.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\newBG.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\avatarbg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\avatar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\avatar1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\avatar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\books8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\books81.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reading23.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\educative1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\schoolboy1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\magnifier13 %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\text54.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\left207.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\left207 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\magnifier13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\magnifier13 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\addstudent.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\txtfield.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\addbookbutton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnreturnbook.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnborrowedhistory.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Borrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\addstudent1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="images\0Borrowabook.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\1returnabook.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\AddAbook.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\students.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\redReturn.png" />
+    <None Include="Resources\redBorrow.png" />
+    <None Include="Resources\transpaReturn.png" />
+    <None Include="Resources\transpaBorrow.png" />
+    <None Include="Resources\redTransactions.png" />
+    <None Include="Resources\redStudents.png" />
+    <None Include="Resources\redReports.png" />
+    <None Include="Resources\redBooks.png" />
+    <None Include="Resources\transpaReports.png" />
+    <None Include="Resources\transpaTransactions.png" />
+    <None Include="Resources\transpaStudents.png" />
+    <None Include="Resources\transpaBook1.png" />
+    <None Include="Resources\transpaBook.png" />
+    <None Include="Resources\MainForm1.jpg" />
+    <None Include="Resources\buttonBackground.png" />
+    <None Include="Resources\userpane1.png" />
+    <None Include="Resources\borrowBook1.jpg" />
+    <None Include="Resources\borrowButton.png" />
+    <None Include="Resources\admin.png" />
+    <None Include="Resources\left2071.png" />
+    <None Include="Resources\borrowBook.jpg" />
+    <None Include="Resources\logout13.png" />
+    <None Include="Resources\Book_List.png" />
+    <None Include="Resources\Students.png" />
+    <None Include="Resources\Time.png" />
+    <None Include="Resources\Add_Book.png" />
+    <None Include="Resources\Return_Book.png" />
+    <None Include="Resources\Borrow_Book.png" />
+    <None Include="Resources\Settings.jpg" />
+    <None Include="Resources\ProfilePIC.jpg" />
+    <None Include="Resources\userpane.png" />
+    <None Include="Resources\MainForm.jpg" />
+    <None Include="Resources\LoginBUTTON.png" />
+    <None Include="Resources\LibraryBG.jpg" />
+    <None Include="Resources\FormBG.png" />
+    <None Include="Resources\LibraryBGBLUE2.jpg" />
+    <None Include="Resources\FormBackground1.png" />
+    <None Include="Resources\FormBackground.png" />
+    <None Include="Resources\LibraryBGBLUE1.jpg" />
+    <None Include="Resources\LibraryBGBLUE.jpg" />
+    <None Include="Resources\CloseICO.png" />
+    <None Include="Resources\MaximizeICO.png" />
+    <None Include="Resources\MinimizeICO.png" />
+    <None Include="Resources\STAICO.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
